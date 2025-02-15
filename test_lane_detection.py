@@ -7,11 +7,11 @@ from models.enet import ENet
 import os
 
 # Define dataset and checkpoint paths
-DATASET_PATH = "/opt/data/TUSimple/test_set"
+DATASET_PATH = "/Users/yuan/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Courses/25SPRING/ECE484/MP1/archive/TUSimple/test_set"
 CHECKPOINT_PATH = "checkpoints/enet_checkpoint_epoch_best.pth"  # Path to the trained model checkpoint
 
 # Function to load the ENet model
-def load_enet_model(checkpoint_path, device="cuda"):
+def load_enet_model(checkpoint_path, device="cpu"):
     enet_model = ENet(binary_seg=2, embedding_dim=4).to(device)
     checkpoint = torch.load(checkpoint_path, map_location=device)
     enet_model.load_state_dict(checkpoint['model_state_dict'])
@@ -28,7 +28,29 @@ def perspective_transform(image):
     """
     
     ####################### TODO: Your code starts Here #######################
+    height, width = image.shape[:2]
 
+    # Define source points
+    src_pts = np.float32([
+        [1123,514],   # Bottom-left
+        [961,514],   # Bottom-right
+        [1123,673],   # Top-left
+        [961,673]    # Top-right
+    ])
+
+    # Define destination points for the Bird's Eye View
+    dst_pts = np.float32([
+        [0, height],                  # Bottom-left
+        [width, height],               # Bottom-right
+        [0, 0],                        # Top-left
+        [width, 0]                     # Top-right
+    ])
+
+    # transformation matrix
+    M = cv2.getPerspectiveTransform(src_pts, dst_pts)
+
+    # perspective warp
+    transformed_image = cv2.warpPerspective(image, M, (width, height))
     ####################### TODO: Your code ends Here #######################
     
     return transformed_image
@@ -48,7 +70,25 @@ def visualize_lanes_row(images, instances_maps, alpha=0.7):
     fig, axes = plt.subplots(1, num_images, figsize=(15, 5))
 
     ####################### TODO: Your code starts Here #######################
-    
+    # Ensure axes is iterable (in case num_images = 1)
+    if num_images == 1:
+        axes = [axes]
+
+    for i in range(num_images):
+        # Resize the input image to 512x256 for consistency
+        image = cv2.resize(images[i], (512, 256))
+
+        # Apply the perspective transform
+        bird_eye_view = perspective_transform(image)
+
+        # Resize the instance map and overlay it on the transformed image
+        instance_map = cv2.resize(instances_maps[i], (512, 256))  # Resize instance map
+        overlay = cv2.addWeighted(bird_eye_view, 1 - alpha, instance_map, alpha, 0)
+
+        # Display the final overlaid image
+        axes[i].imshow(cv2.cvtColor(overlay, cv2.COLOR_BGR2RGB))
+        axes[i].axis("off")  # Hide axes for a cleaner display
+
     ####################### TODO: Your code ends Here #######################
 
     plt.tight_layout()
@@ -56,7 +96,8 @@ def visualize_lanes_row(images, instances_maps, alpha=0.7):
 
 def main():
     # Initialize device and model
-    device = "cuda" if torch.cuda.is_available() else "cpu"
+    # device = "cuda" if torch.cuda.is_available() else "cpu"
+    device = "cpu"
     enet_model = load_enet_model(CHECKPOINT_PATH, device)
     lane_predictor = LaneDetector(enet_model, device=device)
 

@@ -11,11 +11,12 @@ from utils.visualization import visualize_first_prediction
 from torch.optim import Adam
 
 # Configurations
-BATCH_SIZE = 
-LR = 
-EPOCHS = 
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-DATASET_PATH =  "/opt/data/TUSimple"
+BATCH_SIZE = 5
+LR = 0.001
+EPOCHS = 50
+# DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+DEVICE = torch.device("cpu")
+DATASET_PATH =  "/Users/yuan/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Courses/25SPRING/ECE484/MP1/archive/TUSimple"
 CHECKPOINT_DIR = "checkpoints"
 os.makedirs(CHECKPOINT_DIR, exist_ok=True)
 
@@ -73,13 +74,12 @@ def train():
     # TODO: Data preparation: Load and preprocess the training and validation datasets.
     # Hint: Use the LaneDataset class and PyTorch's DataLoader.
     ################################################################################
-    # Dataset() loads dataset
-    # DataLoader() wraps dataset in a DataLoader for batch processing
-    train_dataset = LaneDataset(root = DATASET_PATH, split = "train")
-    train_loader = DataLoader(train_dataset, batch_size = BATCH_SIZE, shuffle = True, num_workers = 4)
+    train_dataset = LaneDataset(DATASET_PATH, mode="train")
+    train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)
 
-    val_dataset = LaneDataset(root=DATASET_PATH, split="val")
-    val_loader = DataLoader(val_dataset, batch_size = BATCH_SIZE, shuffle = False, num_workers = 4)
+    val_dataset = LaneDataset(DATASET_PATH, mode="val",)
+    val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=4)
+
     ################################################################################
 
     # Model and optimizer initialization
@@ -88,14 +88,8 @@ def train():
     
     # TODO: Initialize the Adam optimizer with appropriate learning rate and weight decay.
     ################################################################################
-    optimizer = Adam(enet_model.parameters(), lr = LR, weight_decay = 1e-4)
-
-    #enet_model.parameters() automatically gets all model parameters
-    #Learning rate (lr = LR): Controls the step size of weight updates during training;
-        #lower values = more stable but longer to converge
-        #higher values = faster but may oershoot optimal solution
-    #Weight Decay: Acts as L2 regularization by penalizing large weights, helping to prevent
-    #overfitting and improve generalization.
+    optimizer = Adam(enet_model.parameters(), lr=LR, weight_decay=1e-4)
+    
     ################################################################################
 
 
@@ -125,28 +119,39 @@ def train():
             ################################################################################
             # Hint:
             # 1. Move `images`, `binary_labels`, and `instance_labels` to the correct device (e.g., GPU).
+            # 2. Perform a forward pass using `enet_model` to get predictions (`binary_logits` and `instance_embeddings`).
+            # 3. Compute the binary and instance losses using `compute_loss`.
+            # 4. Sum the losses (`loss = binary_loss + instance_loss`) for backpropagation.
+            # 5. Zero out the optimizer gradients, backpropagate the loss, and take an optimizer step.
+
+            # Move data to the device
             images = images.to(DEVICE)
             binary_labels = binary_labels.to(DEVICE)
             instance_labels = instance_labels.to(DEVICE)
-            # 2. Perform a forward pass using `enet_model` to get predictions (`binary_logits` and `instance_embeddings`).
+
+            # Forward pass
             binary_logits, instance_embeddings = enet_model(images)
-            # 3. Compute the binary and instance losses using `compute_loss`.
+
+            # Compute loss
             binary_loss, instance_loss = compute_loss(
-                binary_output = binary_logits,
-                instance_output = instance_embeddings,
-                binary_label = binary_labels,
-                instance_label = instance_labels,)
-            # 4. Sum the losses (`loss = binary_loss + instance_loss`) for backpropagation.
+                binary_logits, instance_embeddings, binary_labels, instance_labels
+            )
+
+            # Total loss
             loss = binary_loss + instance_loss
-            # 5. Zero out the optimizer gradients, backpropagate the loss, and take an optimizer step.
+
+            # Backpropagation
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
 
-            #continue to next iteration
-            epoch_loss += loss.item()
+            # Store loss values for monitoring
             binary_losses.append(binary_loss.item())
             instance_losses.append(instance_loss.item())
+
+
+
+
 
             ################################################################################
             
