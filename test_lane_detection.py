@@ -34,10 +34,10 @@ def perspective_transform(image):
     scalex = 512/1280
     # Define source points
     src_pts = np.float32([
-        [scaley*27,scalex*714],   # Bottom-left
-        [scaley*1269,scalex*717],   # Bottom-right
-        [scaley*465,scalex*363],   # Top-left
-        [scaley*924,scalex*484]    # Top-right
+        [scaley*2,scalex*717],   # Bottom-left
+        [scaley*1276,scalex*719],   # Bottom-right
+        [scaley*482,scalex*335],   # Top-left
+        [scaley*757,scalex*331]    # Top-right
     ])
 
     # Define destination points for the Bird's Eye View
