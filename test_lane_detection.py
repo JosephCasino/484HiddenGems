@@ -81,8 +81,6 @@ def visualize_lanes_row(images, instances_maps, alpha=0.7):
     num_images = len(images)
     fig, axes = plt.subplots(2, num_images, figsize=(15, 5))
 
-    ####################### TODO: Your code starts Here #######################
-
     for i in range(num_images):
         # Resize the original image to 512 × 256
         image = cv2.resize(images[i], (512, 256))
@@ -120,14 +118,14 @@ def visualize_lanes_row(images, instances_maps, alpha=0.7):
         overlay_transformed_colormap = cv2.applyColorMap(overlay_transformed, cv2.COLORMAP_VIRIDIS)
 
         # Display original lane detection overlay (left half of the row)
-        axes[i * 2].imshow(cv2.cvtColor(overlay_original_colormap, cv2.COLOR_BGR2RGB))
-        axes[i * 2].set_title(f"Image {i+1} - Regular View")
-        axes[i * 2].axis("off")
+        axes[0,i].imshow(cv2.cvtColor(overlay_original_colormap, cv2.COLOR_BGR2RGB))
+        axes[0,i].set_title(f"Image {i+1} - Regular View")
+        axes[0,i].axis("off")
 
         # Display transformed lane detection overlay (right half of the row)
-        axes[i * 2 + 1].imshow(cv2.cvtColor(overlay_transformed_colormap, cv2.COLOR_BGR2RGB))
-        axes[i * 2 + 1].set_title(f"Image {i+1} - Bird’s Eye View")
-        axes[i * 2 + 1].axis("off")
+        axes[1,i].imshow(cv2.cvtColor(overlay_transformed_colormap, cv2.COLOR_BGR2RGB))
+        axes[1,i].set_title(f"Image {i+1} - Bird’s Eye View")
+        axes[1,i].axis("off")
 
     plt.tight_layout()
     plt.show()
