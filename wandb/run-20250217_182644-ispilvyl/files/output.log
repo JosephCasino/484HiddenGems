@@ -1,0 +1,5 @@
+Checkpoint successfully loaded from checkpoints/enet_checkpoint_epoch_best.pth (Epoch 30)
+Evaluation Results:
+  - Binary Loss:   0.0515
+  - Instance Loss: 0.2581
+  - Total Loss:    0.3096

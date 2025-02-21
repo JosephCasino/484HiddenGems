@@ -1,0 +1,16 @@
+{"time":"2025-02-17T18:26:44.309527269-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/jcasino2/484HiddenGems/wandb/run-20250217_182644-ispilvyl/logs/debug-core.log"}
+{"time":"2025-02-17T18:26:44.414772719-06:00","level":"INFO","msg":"created new stream","id":"ispilvyl"}
+{"time":"2025-02-17T18:26:44.414801033-06:00","level":"INFO","msg":"stream: started","id":"ispilvyl"}
+{"time":"2025-02-17T18:26:44.414837635-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"ispilvyl"}
+{"time":"2025-02-17T18:26:44.414850166-06:00","level":"INFO","msg":"handler: started","stream_id":"ispilvyl"}
+{"time":"2025-02-17T18:26:44.41488404-06:00","level":"INFO","msg":"sender: started","stream_id":"ispilvyl"}
+{"time":"2025-02-17T18:26:44.591683578-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-17T18:26:45.704962051-06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-17T18:26:45.705289337-06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-17T18:26:46.000921642-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-17T18:26:46.171361203-06:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-02-17T18:26:47.179262181-06:00","level":"INFO","msg":"stream: closing","id":"ispilvyl"}
+{"time":"2025-02-17T18:26:47.179310206-06:00","level":"INFO","msg":"handler: closed","stream_id":"ispilvyl"}
+{"time":"2025-02-17T18:26:47.179339021-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ispilvyl"}
+{"time":"2025-02-17T18:26:47.179364472-06:00","level":"INFO","msg":"sender: closed","stream_id":"ispilvyl"}
+{"time":"2025-02-17T18:26:47.179733013-06:00","level":"INFO","msg":"stream: closed","id":"ispilvyl"}

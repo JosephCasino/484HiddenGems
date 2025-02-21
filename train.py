@@ -11,12 +11,12 @@ from utils.visualization import visualize_first_prediction
 from torch.optim import Adam
 
 # Configurations
-BATCH_SIZE = 5
+BATCH_SIZE = 8
 LR = 0.001
-EPOCHS = 50
-# DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-DEVICE = torch.device("cpu")
-DATASET_PATH =  "/Users/yuan/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Courses/25SPRING/ECE484/MP1/archive/TUSimple"
+EPOCHS = 30
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+#DEVICE = torch.device("cpu")
+DATASET_PATH =  "/opt/data/TUSimple"
 CHECKPOINT_DIR = "checkpoints"
 os.makedirs(CHECKPOINT_DIR, exist_ok=True)
 

@@ -31,7 +31,7 @@ def evaluate():
         }
     )
 
-    val_dataset = LaneDataset(dataset_path=DATASET_PATH, mode="test")
+    val_dataset = LaneDataset(dataset_path=DATASET_PATH, mode="val")
     val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False)
 
     enet_model = ENet(binary_seg=2, embedding_dim=4).to(DEVICE)
