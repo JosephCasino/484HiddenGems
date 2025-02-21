@@ -80,6 +80,8 @@ def visualize_lanes_row(images, instances_maps, alpha=0.7):
     
     num_images = len(images)
     fig, axes = plt.subplots(2, num_images, figsize=(15, 5))
+    
+    ####################### TODO: Your code starts Here #######################
 
     for i in range(num_images):
         # Resize the original image to 512 × 256
@@ -126,6 +128,8 @@ def visualize_lanes_row(images, instances_maps, alpha=0.7):
         axes[1,i].imshow(cv2.cvtColor(overlay_transformed_colormap, cv2.COLOR_BGR2RGB))
         axes[1,i].set_title(f"Image {i+1} - Bird’s Eye View")
         axes[1,i].axis("off")
+        
+    ####################### TODO: Your code ends Here #######################
 
     plt.tight_layout()
     plt.show()
