@@ -59,7 +59,9 @@ class vehicleController():
     # Based on all unreached waypoints, and your current vehicle state, decide your velocity
     def longititudal_controller(self, curr_x, curr_y, curr_vel, curr_yaw, future_unreached_waypoints):
 
-        ####################### TODO: Your TASK 2 code starts Here #######################        
+        ####################### TODO: Your TASK 2 code starts Here #######################     
+        # Target Velocity = 10 m/s
+       
         x1, y1 = curr_x, curr_y  # Current vehicle position
         x2, y2 = future_unreached_waypoints[0]  # Next waypoint
         x3, y3 = future_unreached_waypoints[1]  # Second future waypoint
@@ -83,7 +85,21 @@ class vehicleController():
     def pure_pursuit_lateral_controller(self, curr_x, curr_y, curr_yaw, target_point, future_unreached_waypoints):
 
         ####################### TODO: Your TASK 3 code starts Here #######################
-        target_steering = 0
+        L = self.L  # Wheelbase
+        ld = min(max(2.0, 0.5 * future_unreached_waypoints[0][0]), 5.0)  # Dynamic lookahead distance
+
+        # Find the best lookahead point from future waypoints
+        for waypoint in future_unreached_waypoints:
+            dist = np.sqrt((waypoint[0] - curr_x)**2 + (waypoint[1] - curr_y)**2)
+            if dist >= ld:
+                target_point = waypoint
+                break
+
+        tx, ty = target_point
+        angle_to_target = np.arctan2(ty - curr_y, tx - curr_x)
+        alpha = angle_to_target - curr_yaw
+        target_steering = np.arctan2(2 * L * np.sin(alpha), ld)
+
 
         ####################### TODO: Your TASK 3 code starts Here #######################
         return target_steering
