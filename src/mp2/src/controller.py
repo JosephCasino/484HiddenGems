@@ -42,6 +42,15 @@ class vehicleController():
         ####################### TODO: Your TASK 1 code starts Here #######################
         pos_x, pos_y, vel, yaw = 0, 0, 0, 0
 
+        pos_x = currentPose.pose.position.x
+        pos_y = currentPose.pose.position.y
+        vel = currentPose.twist.linear.x
+
+        roll, pitch, yaw = quaternion_to_euler(currentPose.pose.orientation.x,currentPose.pose.orientation.y,
+                                               currentPose.pose.orientation.z,currentPose.pose.orientation.w)
+
+        return pos_x, pos_y, vel, yaw  # Yaw is in radians
+
         ####################### TODO: Your Task 1 code ends Here #######################
 
         return pos_x, pos_y, vel, yaw # note that yaw is in radian
@@ -50,9 +59,21 @@ class vehicleController():
     # Based on all unreached waypoints, and your current vehicle state, decide your velocity
     def longititudal_controller(self, curr_x, curr_y, curr_vel, curr_yaw, future_unreached_waypoints):
 
-        ####################### TODO: Your TASK 2 code starts Here #######################
-        target_velocity = 10
-
+        ####################### TODO: Your TASK 2 code starts Here #######################        
+        x1, y1 = curr_x, curr_y  # Current vehicle position
+        x2, y2 = future_unreached_waypoints[0]  # Next waypoint
+        x3, y3 = future_unreached_waypoints[1]  # Second future waypoint
+        
+        # Compute angles
+        angle1 = np.arctan2(y2 - y1, x2 - x1)  # Angle from current position to next waypoint
+        angle2 = np.arctan2(y3 - y2, x3 - x2)  # Angle from next waypoint to second waypoint
+        angle_diff = abs(angle2 - angle1)  # Curvature estimation
+        
+        # Adjust speed based on curvature
+        if angle_diff > 0.3:  # If turn is sharp
+            target_velocity = 8.0  # Slow down
+        else:
+            target_velocity = 12.0  # Maintain high speed
 
         ####################### TODO: Your TASK 2 code ends Here #######################
         return target_velocity
