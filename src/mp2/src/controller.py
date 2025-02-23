@@ -86,7 +86,11 @@ class vehicleController():
 
         ####################### TODO: Your TASK 3 code starts Here #######################
         L = self.L  # Wheelbase
-        ld = min(max(2.0, 0.5 * future_unreached_waypoints[0][0]), 5.0)  # Dynamic lookahead distance
+        # ld = min(max(2.0, 0.5 * future_unreached_waypoints[0][0]), 5.0)  # Dynamic lookahead distance
+        curr_vel = self.getModelState().twist.linear.x  #Get current velocity from Gazebo ModelState
+
+        # Adaptive lookahead distance: increases with speed, limited between 2m and 6m
+        ld = max(2.0, min(0.5 * abs(curr_vel), 6.0))
 
         # Find the best lookahead point from future waypoints
         for waypoint in future_unreached_waypoints:
