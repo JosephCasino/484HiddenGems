@@ -82,13 +82,12 @@ class vehicleController():
 
 
     # Task 3: Lateral Controller (Pure Pursuit)
-    def pure_pursuit_lateral_controller(self, curr_x, curr_y, curr_yaw, target_point, future_unreached_waypoints):
+    def pure_pursuit_lateral_controller(self, curr_x, curr_y, curr_yaw, target_point, future_unreached_waypoints,curr_vel):
 
         ####################### TODO: Your TASK 3 code starts Here #######################
         L = self.L  # Wheelbase
         # ld = min(max(2.0, 0.5 * future_unreached_waypoints[0][0]), 5.0)  # Dynamic lookahead distance
-        curr_vel = self.getModelState().twist.linear.x  #Get current velocity from Gazebo ModelState
-
+        
         # Adaptive lookahead distance: increases with speed, limited between 2m and 6m
         ld = max(2.0, min(0.5 * abs(curr_vel), 6.0))
 
@@ -127,7 +126,7 @@ class vehicleController():
 
 
         target_velocity = self.longititudal_controller(curr_x, curr_y, curr_vel, curr_yaw, future_unreached_waypoints)
-        target_steering = self.pure_pursuit_lateral_controller(curr_x, curr_y, curr_yaw, target_point, future_unreached_waypoints)
+        target_steering = self.pure_pursuit_lateral_controller(curr_x, curr_y, curr_yaw, target_point, future_unreached_waypoints,curr_vel)
 
 
         #Pack computed velocity and steering angle into Ackermann command
