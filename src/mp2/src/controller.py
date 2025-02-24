@@ -15,7 +15,7 @@ class vehicleController():
         self.controlPub = rospy.Publisher("/ackermann_cmd", AckermannDrive, queue_size = 1)
         self.prev_vel = 0
         self.L = 1.75 # Wheelbase, can be get from gem_control.py
-        self.log_acceleration = False
+        self.log_acceleration = True
 
     def getModelState(self):
         # Get the current state of the vehicle
@@ -126,6 +126,8 @@ class vehicleController():
         # Acceleration Profile
         if self.log_acceleration:
             acceleration = (curr_vel- self.prev_vel) * 100 # Since we are running in 100Hz
+            x_log = curr_x
+            y_log = curr_y
 
 
 
@@ -140,6 +142,8 @@ class vehicleController():
 
         # Publish the computed control input to vehicle model
         self.controlPub.publish(newAckermannCmd)
+
+        return acceleration, x_log, y_log
 
     def stop(self):
         newAckermannCmd = AckermannDrive()

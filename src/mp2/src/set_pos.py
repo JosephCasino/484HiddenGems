@@ -28,7 +28,7 @@ def setModelState(model_state):
     except rospy.ServiceException as e:
         rospy.loginfo("Service did not process request: "+str(e))
 
-def set_position(x = 0,y = -98.5, yaw=-0.1):
+def set_position(x = 3,y = -97.5, yaw=-0.1):
     
     rospy.init_node("set_pos")
 
