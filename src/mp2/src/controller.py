@@ -59,10 +59,12 @@ class vehicleController():
 
         ####################### TODO: Your TASK 2 code starts Here #######################     
         # Target Velocity = 10 m/s
-       
+    
         x1, y1 = curr_x, curr_y  # Current vehicle position
-        x2, y2 = future_unreached_waypoints[0]  # Next waypoint
-        x3, y3 = future_unreached_waypoints[1]  # Second future waypoint
+        if len(future_unreached_waypoints>1):
+            x2, y2 = future_unreached_waypoints[0]  # Next waypoint
+        if len(future_unreached_waypoints>2):
+            x3, y3 = future_unreached_waypoints[1]  # Second future waypoint
         
         # Compute angles
         angle1 = np.arctan2(y2 - y1, x2 - x1)  # Angle from current position to next waypoint
@@ -73,7 +75,7 @@ class vehicleController():
         if angle_diff > 0.3:  # If turn is sharp
             target_velocity = 8.0  # Slow down
         else:
-            target_velocity = 12.0  # Maintain high speed
+            target_velocity = 15.0  # Maintain high speed
 
         ####################### TODO: Your TASK 2 code ends Here #######################
         return target_velocity
