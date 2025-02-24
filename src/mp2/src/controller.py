@@ -49,8 +49,6 @@ class vehicleController():
         roll, pitch, yaw = quaternion_to_euler(currentPose.pose.orientation.x,currentPose.pose.orientation.y,
                                                currentPose.pose.orientation.z,currentPose.pose.orientation.w)
 
-        return pos_x, pos_y, vel, yaw  # Yaw is in radians
-
         ####################### TODO: Your Task 1 code ends Here #######################
 
         return pos_x, pos_y, vel, yaw # note that yaw is in radian
@@ -89,7 +87,7 @@ class vehicleController():
         # ld = min(max(2.0, 0.5 * future_unreached_waypoints[0][0]), 5.0)  # Dynamic lookahead distance
         
         # Adaptive lookahead distance: increases with speed, limited between 2m and 6m
-        ld = max(2.0, min(0.5 * abs(curr_vel), 6.0))
+        ld = max(4, min(0.5 * abs(curr_vel), 8))
 
         # Find the best lookahead point from future waypoints
         for waypoint in future_unreached_waypoints:
