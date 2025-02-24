@@ -56,7 +56,7 @@ def run_model():
             if pos_idx == len(pos_list): #Reached all the waypoints
                 print("Reached all the waypoints")
                 total_time = (cur_time - start_time).to_sec()
-                print(total_time)
+                print("Total Time: ", total_time)
                 return True, pos_idx, total_time
 
             target_x, target_y = pos_list[pos_idx]
