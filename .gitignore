@@ -12,10 +12,6 @@ env/
 ENV/
 .venv/
 
-# ROS workspace (if using catkin)
-devel/
-build/
-install/
 
 # Logs and temp files
 *.log
