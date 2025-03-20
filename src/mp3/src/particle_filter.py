@@ -36,8 +36,8 @@ class particleFilter:
 
 
             ## first quadrant
-            # x = 
-            # y =
+            # x = np.random.uniform(world.width/2, world.width)
+            # y = np.random.uniform(world.height/2, world.height)
 
             particles.append(Particle(x = x, y = y, maze = world, sensor_limit = sensor_limit))
 
@@ -95,6 +95,17 @@ class particleFilter:
         """
 
         ## TODO #####
+        for particle in self.particles:
+            particle.weight = self.weight_gaussian_kernel(readings_robot, particle.read_sensor())
+        
+        weight_list = np.zeros(self.num_particles)
+        for i in range(self.num_particles):
+            weight_list[i] = self.particles[i].weight 
+
+        weight_list = weight_list / np.sum(weight_list)
+
+        for i in range(self.num_particles):
+            self.particles[i].weight  = weight_list[i] 
 
 
         ###############
@@ -108,8 +119,29 @@ class particleFilter:
         particles_new = list()
 
         ## TODO #####
-        
 
+        # get the weights and normalize them
+        weight_list = np.zeros(self.num_particles)
+        for i in range(self.num_particles):
+            weight_list[i] = self.particles[i].weight 
+
+        # weight_list = weight_list / np.sum(weight_list)
+
+        # calculate the cumulative sum of the weights
+        cumu_sum = np.cumsum(weight_list)
+        
+        # print(f'should be 1: {cumu_sum[-1]}')
+
+        # resampling
+        for i in range(self.num_particles):
+            rand_num = random.uniform(cumu_sum[0],cumu_sum[-1])
+            idx = 0
+            for j in range(self.num_particles):
+                if cumu_sum[j] > rand_num: 
+                    idx = j
+                    break
+            particles_new.append(Particle(x = self.particles[idx].x, y = self.particles[idx].y , maze = self.world , heading = self.particles[idx].heading, 
+                                          weight = rand_num , sensor_limit = self.sensor_limit, noisy=True))
         ###############
 
         self.particles = particles_new
@@ -121,6 +153,13 @@ class particleFilter:
             You can either use ode function or vehicle_dynamics function provided above
         """
         ## TODO #####
+        for particle in self.particles:
+            for control in self.control:
+
+                dx, dy, dtheta = vehicle_dynamics(t = 0.01, vars=[particle.x, particle.y, particle.heading], vr = control[0] , delta=control[1])
+                particle.x += dx * 0.01
+                particle.y += dy * 0.01
+                particle.heading += dtheta * 0.01
         
 
         ###############
@@ -135,5 +174,21 @@ class particleFilter:
         count = 0 
         while True:
             ## TODO: (i) Implement Section 3.2.2. (ii) Display robot and particles on map. (iii) Compute and save position/heading error to plot. #####
+
+            # print('test')
+            # print(f'control array: {self.control}')
+
+            self.world.clear_objects()
+
+            self.particleMotionModel()
+            self.updateWeight(self.bob.read_sensor())
+            self.resampleParticle()
+
+            self.world.show_particles(self.particles)
+            self.world.show_robot(self.bob)
+
+            # print(self.control)
+            # print(type(self.control[0]))
+            # print(self.control[0])
             
             ###############
