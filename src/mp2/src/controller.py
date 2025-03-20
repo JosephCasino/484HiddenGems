@@ -76,7 +76,7 @@ class vehicleController():
         # Adjust speed based on curvature
         if angle_diff > 0.3 and angle_diff <=0.5:  # If turn is sharp
             target_velocity = 10 # Slow down
-        if angle_diff > 0.5:  # If turn is sharp
+        elif angle_diff > 0.5:  # If turn is sharp
             target_velocity = 8  # Slow down
         else:
             target_velocity = 15.0  # Maintain high speed
