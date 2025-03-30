@@ -40,6 +40,7 @@ Open each command in a **separate terminal window**, and ensure to source the wo
 
 ```bash
 cd ~/Project_Root_Directory
+chmod +x devel/_setup_util.py
 ```
 
 #### **Build Workspace (not necessary if WS is placed in nx directory)**
