@@ -73,9 +73,9 @@ def main():
 
             # -------------------------------- For Global Origin Conversion --------------------------------
 
-            theta = -1.026  # body frame rotate w.r.t global frame
-            x_p   = -0.905 # body origin move w.r.t. global frame along x 
-            y_p   = 0.243  # body origin move w.r.t. global frame along y
+            theta = np.pi/2 + 0.545  # body frame rotate w.r.t global frame
+            x_p   = 0.43 # body origin move w.r.t. global frame along x 
+            y_p   = 0.54  
 
             # ----------------------------------------------------------------------------------------------
 
