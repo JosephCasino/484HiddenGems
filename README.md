@@ -369,3 +369,10 @@ rosrun vicon_control vision_lanefollower_pid.py
 
 You should now have a decent overview of how the lane detection module is organized and where the PID controller fits in. Good luck, and remember that everything in these files is fair game for improvement or complete replacement. Just be sure you understand the existing flow before making changes.
 
+## **Credits**
+
+Vicon controller is written by Hang Cui
+
+Vison-PID Starter Code A is written by Hyoungju Lim, Vikram Battalapalli, Don Lazatin, Cheng Zhu 
+
+Vision-PID Starter Code B is written by Tanvi Kulkarni, Harish Kumar Balaji, Vikram Raj Nagoor Kani, Manan Hitesh Maheshwari
