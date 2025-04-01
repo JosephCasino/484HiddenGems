@@ -7,6 +7,8 @@ from gazebo_msgs.srv import GetModelState
 import shutil
 from std_msgs.msg import Float32MultiArray
 from scipy.integrate import ode
+import matplotlib.pyplot as plt
+from tqdm import tqdm
 
 import random
 
@@ -31,13 +33,13 @@ class particleFilter:
         for i in range(num_particles):
 
             # (Default) The whole map
-            x = np.random.uniform(0, world.width)
-            y = np.random.uniform(0, world.height)
+            # x = np.random.uniform(0, world.width)
+            # y = np.random.uniform(0, world.height)
 
 
             ## first quadrant
-            # x = np.random.uniform(world.width/2, world.width)
-            # y = np.random.uniform(world.height/2, world.height)
+            x = np.random.uniform(world.width/2, world.width)
+            y = np.random.uniform(world.height/2, world.height)
 
             particles.append(Particle(x = x, y = y, maze = world, sensor_limit = sensor_limit))
 
@@ -166,27 +168,40 @@ class particleFilter:
         # pass
 
 
-    def runFilter(self):
+    def runFilter(self, distance_error, orientation_error):
         """
         Description:
             Run PF localization
         """
+
+        # distance_error = []
+        # orientation_error = []
+
         count = 0 
-        while True:
+        for i in tqdm(range(1200)):
             ## TODO: (i) Implement Section 3.2.2. (ii) Display robot and particles on map. (iii) Compute and save position/heading error to plot. #####
 
             # print('test')
-            print(f'control_list: {self.control}')
+            # print(f'control_list: {self.control}')
 
             self.world.clear_objects()
 
             self.particleMotionModel()
             self.updateWeight(self.bob.read_sensor())
+
+
             self.world.show_particles(self.particles, show_frequency = 10)
-            self.world.show_estimated_location(self.particles)
+            x_e, y_e, h_e = self.world.show_estimated_location(self.particles)
             self.world.show_robot(self.bob)
 
+            distance_error.append(np.sqrt(pow(self.bob.x - x_e, 2) + pow(y_e, 2)))
+            orientation_error.append(np.abs(self.bob.heading - h_e))
+
+
+
             self.resampleParticle()
+            count += 1
+
 
 
 

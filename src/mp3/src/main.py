@@ -8,6 +8,7 @@ from gazebo_msgs.msg import  ModelState
 from gazebo_msgs.srv import GetModelState
 from maze import Maze, Robot
 from particle_filter import particleFilter
+import matplotlib.pyplot as plt
 
 def main(window_width, window_height, num_particles, sensor_limit, measurement_noise):
     rospy.init_node("navigator")
@@ -63,7 +64,20 @@ def main(window_width, window_height, num_particles, sensor_limit, measurement_n
     pf = particleFilter(bob = bob, world = world, num_particles = num_particles, sensor_limit = sensor_limit,
                         x_start = x_start, y_start = y_start)
     
-    pf.runFilter()
+    distance_error = []
+    orientation_error = []
+    
+    pf.runFilter(distance_error, orientation_error)
+
+    plt.figure()
+    plt.plot(distance_error, 'b-', label = 'distance_error')
+    plt.plot(orientation_error, 'r-', label = 'orientation_error')
+    plt.xlabel('iteration')
+    plt.ylabel('errors')
+    plt.legend()
+    plt.grid()
+    plt.savefig('iteration errors', dpi=300, bbox_inches = 'tight')
+    plt.close()
 
 if __name__ == '__main__':
 

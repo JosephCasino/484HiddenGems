@@ -1,0 +1,8 @@
+prefix=/home/jcasino2/484HiddenGems/install
+
+Name: mp2
+Description: Description of mp2
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
