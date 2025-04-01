@@ -33,13 +33,13 @@ class particleFilter:
         for i in range(num_particles):
 
             # (Default) The whole map
-            # x = np.random.uniform(0, world.width)
-            # y = np.random.uniform(0, world.height)
+            x = np.random.uniform(0, world.width)
+            y = np.random.uniform(0, world.height)
 
 
             ## first quadrant
-            x = np.random.uniform(world.width/2, world.width)
-            y = np.random.uniform(world.height/2, world.height)
+            # x = np.random.uniform(world.width/2, world.width)
+            # y = np.random.uniform(world.height/2, world.height)
 
             particles.append(Particle(x = x, y = y, maze = world, sensor_limit = sensor_limit))
 
@@ -143,7 +143,7 @@ class particleFilter:
                     idx = j
                     break
             particles_new.append(Particle(x = self.particles[idx].x, y = self.particles[idx].y , maze = self.world , heading = self.particles[idx].heading, 
-                                          weight = 1/self.num_particles, sensor_limit = self.sensor_limit, noisy=True))
+                                          weight = self.particles[idx].weight, sensor_limit = self.sensor_limit, noisy=True))
         ###############
 
         self.particles = particles_new
@@ -178,7 +178,7 @@ class particleFilter:
         # orientation_error = []
 
         count = 0 
-        for i in tqdm(range(1200)):
+        for i in tqdm(range(800)):
             ## TODO: (i) Implement Section 3.2.2. (ii) Display robot and particles on map. (iii) Compute and save position/heading error to plot. #####
 
             # print('test')
@@ -194,7 +194,7 @@ class particleFilter:
             x_e, y_e, h_e = self.world.show_estimated_location(self.particles)
             self.world.show_robot(self.bob)
 
-            distance_error.append(np.sqrt(pow(self.bob.x - x_e, 2) + pow(y_e, 2)))
+            distance_error.append(np.sqrt(pow(self.bob.x - x_e, 2) + pow(self.bob.y - y_e, 2)))
             orientation_error.append(np.abs(self.bob.heading - h_e))
 
 
