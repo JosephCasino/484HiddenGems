@@ -2,4 +2,4 @@
 source_root_dir = '/home/nx/f1tenth_ros1_ws/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/opt/ros/noetic'.split(';') if '/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/nx/f1tenth_ros1_ws/devel;/opt/ros/noetic'.split(';') if '/home/nx/f1tenth_ros1_ws/devel;/opt/ros/noetic' != '' else []
