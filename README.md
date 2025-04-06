@@ -45,11 +45,13 @@ catkin_make
 #### Terminal 1: Racecar Remote Launch
 
 source devel/setup.bash
+
 roslaunch racecar teleop.launch
 
 #### Terminal 2: Vicon Bridge
 
 source devel/setup.bash
+
 python3 vicon_bridge.py
 
 #### Terminal 3: Vicon Tracker Code
@@ -378,27 +380,30 @@ chmod -R 777 ./
 
 catkin_make
 
-
 ##### Terminal 1: Racecar Camera Launch
 
 source devel/setup.bash
+
 roslaunch racecar sensors.launch
 
 ##### Terminal 2: Racecar Remote Launch
 
 source devel/setup.bash
+
 roslaunch racecar teleop.launch
 
 ##### Terminal 3: Lane Following PID Control
 
 source devel/setup.bash
+
 rosrun vision_control vision_PID_{A or B}/vision_lanefollower_pid.py
 
 ##### Terminal 4: Calcutate Error (starter code B only)
 
 
 source devel/setup.bash
-rosrun vicon_control vision_PID_B/errorgen.py
+
+rosrun vision_control vision_PID_B/errorgen.py
 
 ---
 
