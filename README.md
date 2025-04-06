@@ -35,6 +35,7 @@ They may not correspond with the lane exactly, so it is recommended to re-record
 Open each command in a *separate terminal window*, and ensure to source the workspace by running the commands in your project directory (you only need to chmod initially):
 
 cd ~/Project_Root_Directory
+
 chmod -R 777 ./
 
 #### *Build Workspace (not necessary if WS is placed in nx directory)*
@@ -57,6 +58,7 @@ python3 vicon_bridge.py
 #### Terminal 3: Vicon Tracker Code
 
 source devel/setup.bash
+
 rosrun vicon_control/vicon_tracker_pp.py
 
 ---
@@ -374,6 +376,7 @@ Tweak these for better performance. If the vehicle oscillates too much, try lowe
 Open each command in a *separate terminal window*, and ensure to source the workspace by running the commands in your project directory:
 
 cd ~/Project_Root_Directory
+
 chmod -R 777 ./
 
 #### *Build Workspace (not necessary if WS is placed in nx directory)*
