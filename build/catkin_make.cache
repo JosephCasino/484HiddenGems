@@ -1,0 +1,2 @@
+f1tenth-sim:racecar_worlds
+-DCATKIN_DEVEL_PREFIX=/home/taoweih2/Documents/ece484/f1tenth_simulator/devel -DCMAKE_INSTALL_PREFIX=/home/taoweih2/Documents/ece484/f1tenth_simulator/install -G Unix Makefiles
