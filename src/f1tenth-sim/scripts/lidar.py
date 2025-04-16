@@ -62,20 +62,6 @@ def scan_callback2(msg):
         fig1.savefig('lidar.png')
     plt.close(fig1)
 
-    fig2, ax2 = plt.subplots()
-    ax2.scatter(global_x,global_y,s=2)
-    ax2.arrow(0,0,0.5,0, head_width=0.1, head_length=.1, fc ='red',ec='red')
-    ax2.set_aspect('equal')
-    ax2.set_xlim(-10,10)
-    ax2.set_ylim(-10,10)
-    ax2.set_title("scan")
-    ax2.set_xlabel("x")
-    ax2.set_ylabel("y")
-
-    count +=1
-    if count % 10 == 0:
-        fig2.savefig('map.png')
-    plt.close(fig2)
 
 def main():
     rospy.init_node('my_laser_listener')
