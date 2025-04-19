@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/nx/f1tenth_ros1_ws/devel/lib/serial/serial_example"
-  "/home/nx/f1tenth_ros1_ws/devel/lib/serial/serial_example.pdb"
+  "/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/serial/serial_example"
+  "/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/serial/serial_example.pdb"
   "CMakeFiles/serial_example.dir/examples/serial_example.cc.o"
 )
 

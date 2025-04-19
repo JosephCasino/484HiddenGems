@@ -1,4 +1,4 @@
-prefix=/home/nx/f1tenth_ros1_ws/devel
+prefix=/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel
 
 Name: vicon_control
 Description: Description of vicon_control

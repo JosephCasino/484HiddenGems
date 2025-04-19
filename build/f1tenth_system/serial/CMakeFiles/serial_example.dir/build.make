@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nx/f1tenth_ros1_ws/src
+CMAKE_SOURCE_DIR = /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nx/f1tenth_ros1_ws/build
+CMAKE_BINARY_DIR = /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build
 
 # Include any dependencies generated for this target.
 include f1tenth_system/serial/CMakeFiles/serial_example.dir/depend.make
@@ -58,17 +58,17 @@ include f1tenth_system/serial/CMakeFiles/serial_example.dir/progress.make
 include f1tenth_system/serial/CMakeFiles/serial_example.dir/flags.make
 
 f1tenth_system/serial/CMakeFiles/serial_example.dir/examples/serial_example.cc.o: f1tenth_system/serial/CMakeFiles/serial_example.dir/flags.make
-f1tenth_system/serial/CMakeFiles/serial_example.dir/examples/serial_example.cc.o: /home/nx/f1tenth_ros1_ws/src/f1tenth_system/serial/examples/serial_example.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nx/f1tenth_ros1_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object f1tenth_system/serial/CMakeFiles/serial_example.dir/examples/serial_example.cc.o"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/serial && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/serial_example.dir/examples/serial_example.cc.o -c /home/nx/f1tenth_ros1_ws/src/f1tenth_system/serial/examples/serial_example.cc
+f1tenth_system/serial/CMakeFiles/serial_example.dir/examples/serial_example.cc.o: /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/serial/examples/serial_example.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object f1tenth_system/serial/CMakeFiles/serial_example.dir/examples/serial_example.cc.o"
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/serial && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/serial_example.dir/examples/serial_example.cc.o -c /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/serial/examples/serial_example.cc
 
 f1tenth_system/serial/CMakeFiles/serial_example.dir/examples/serial_example.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/serial_example.dir/examples/serial_example.cc.i"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/serial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nx/f1tenth_ros1_ws/src/f1tenth_system/serial/examples/serial_example.cc > CMakeFiles/serial_example.dir/examples/serial_example.cc.i
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/serial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/serial/examples/serial_example.cc > CMakeFiles/serial_example.dir/examples/serial_example.cc.i
 
 f1tenth_system/serial/CMakeFiles/serial_example.dir/examples/serial_example.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/serial_example.dir/examples/serial_example.cc.s"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/serial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nx/f1tenth_ros1_ws/src/f1tenth_system/serial/examples/serial_example.cc -o CMakeFiles/serial_example.dir/examples/serial_example.cc.s
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/serial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/serial/examples/serial_example.cc -o CMakeFiles/serial_example.dir/examples/serial_example.cc.s
 
 # Object files for target serial_example
 serial_example_OBJECTS = \
@@ -77,23 +77,23 @@ serial_example_OBJECTS = \
 # External object files for target serial_example
 serial_example_EXTERNAL_OBJECTS =
 
-/home/nx/f1tenth_ros1_ws/devel/lib/serial/serial_example: f1tenth_system/serial/CMakeFiles/serial_example.dir/examples/serial_example.cc.o
-/home/nx/f1tenth_ros1_ws/devel/lib/serial/serial_example: f1tenth_system/serial/CMakeFiles/serial_example.dir/build.make
-/home/nx/f1tenth_ros1_ws/devel/lib/serial/serial_example: /home/nx/f1tenth_ros1_ws/devel/lib/libserial.so
-/home/nx/f1tenth_ros1_ws/devel/lib/serial/serial_example: f1tenth_system/serial/CMakeFiles/serial_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nx/f1tenth_ros1_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/nx/f1tenth_ros1_ws/devel/lib/serial/serial_example"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/serial && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/serial_example.dir/link.txt --verbose=$(VERBOSE)
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/serial/serial_example: f1tenth_system/serial/CMakeFiles/serial_example.dir/examples/serial_example.cc.o
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/serial/serial_example: f1tenth_system/serial/CMakeFiles/serial_example.dir/build.make
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/serial/serial_example: /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libserial.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/serial/serial_example: f1tenth_system/serial/CMakeFiles/serial_example.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/serial/serial_example"
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/serial && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/serial_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-f1tenth_system/serial/CMakeFiles/serial_example.dir/build: /home/nx/f1tenth_ros1_ws/devel/lib/serial/serial_example
+f1tenth_system/serial/CMakeFiles/serial_example.dir/build: /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/serial/serial_example
 
 .PHONY : f1tenth_system/serial/CMakeFiles/serial_example.dir/build
 
 f1tenth_system/serial/CMakeFiles/serial_example.dir/clean:
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/serial && $(CMAKE_COMMAND) -P CMakeFiles/serial_example.dir/cmake_clean.cmake
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/serial && $(CMAKE_COMMAND) -P CMakeFiles/serial_example.dir/cmake_clean.cmake
 .PHONY : f1tenth_system/serial/CMakeFiles/serial_example.dir/clean
 
 f1tenth_system/serial/CMakeFiles/serial_example.dir/depend:
-	cd /home/nx/f1tenth_ros1_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nx/f1tenth_ros1_ws/src /home/nx/f1tenth_ros1_ws/src/f1tenth_system/serial /home/nx/f1tenth_ros1_ws/build /home/nx/f1tenth_ros1_ws/build/f1tenth_system/serial /home/nx/f1tenth_ros1_ws/build/f1tenth_system/serial/CMakeFiles/serial_example.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/serial /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/serial /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/serial/CMakeFiles/serial_example.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : f1tenth_system/serial/CMakeFiles/serial_example.dir/depend
 

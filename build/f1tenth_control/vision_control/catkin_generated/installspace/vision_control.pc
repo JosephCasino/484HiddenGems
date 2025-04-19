@@ -1,0 +1,8 @@
+prefix=/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/install
+
+Name: vision_control
+Description: Description of vision_control
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

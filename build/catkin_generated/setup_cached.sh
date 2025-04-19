@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/nx/f1tenth_ros1_ws/build'
+export CMAKE_PREFIX_PATH="/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel:$CMAKE_PREFIX_PATH"
+export PWD='/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src:$ROS_PACKAGE_PATH"

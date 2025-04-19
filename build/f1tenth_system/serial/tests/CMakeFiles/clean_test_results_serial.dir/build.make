@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nx/f1tenth_ros1_ws/src
+CMAKE_SOURCE_DIR = /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nx/f1tenth_ros1_ws/build
+CMAKE_BINARY_DIR = /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build
 
 # Utility rule file for clean_test_results_serial.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/nx/f1tenth_ros1_ws/build
 include f1tenth_system/serial/tests/CMakeFiles/clean_test_results_serial.dir/progress.make
 
 f1tenth_system/serial/tests/CMakeFiles/clean_test_results_serial:
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/serial/tests && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/nx/f1tenth_ros1_ws/build/test_results/serial
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/serial/tests && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/test_results/serial
 
 clean_test_results_serial: f1tenth_system/serial/tests/CMakeFiles/clean_test_results_serial
 clean_test_results_serial: f1tenth_system/serial/tests/CMakeFiles/clean_test_results_serial.dir/build.make
@@ -67,10 +67,10 @@ f1tenth_system/serial/tests/CMakeFiles/clean_test_results_serial.dir/build: clea
 .PHONY : f1tenth_system/serial/tests/CMakeFiles/clean_test_results_serial.dir/build
 
 f1tenth_system/serial/tests/CMakeFiles/clean_test_results_serial.dir/clean:
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/serial/tests && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_serial.dir/cmake_clean.cmake
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/serial/tests && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_serial.dir/cmake_clean.cmake
 .PHONY : f1tenth_system/serial/tests/CMakeFiles/clean_test_results_serial.dir/clean
 
 f1tenth_system/serial/tests/CMakeFiles/clean_test_results_serial.dir/depend:
-	cd /home/nx/f1tenth_ros1_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nx/f1tenth_ros1_ws/src /home/nx/f1tenth_ros1_ws/src/f1tenth_system/serial/tests /home/nx/f1tenth_ros1_ws/build /home/nx/f1tenth_ros1_ws/build/f1tenth_system/serial/tests /home/nx/f1tenth_ros1_ws/build/f1tenth_system/serial/tests/CMakeFiles/clean_test_results_serial.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/serial/tests /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/serial/tests /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/serial/tests/CMakeFiles/clean_test_results_serial.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : f1tenth_system/serial/tests/CMakeFiles/clean_test_results_serial.dir/depend
 

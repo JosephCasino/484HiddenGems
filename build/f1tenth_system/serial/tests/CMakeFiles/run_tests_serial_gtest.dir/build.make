@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nx/f1tenth_ros1_ws/src
+CMAKE_SOURCE_DIR = /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nx/f1tenth_ros1_ws/build
+CMAKE_BINARY_DIR = /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build
 
 # Utility rule file for run_tests_serial_gtest.
 
@@ -63,10 +63,10 @@ f1tenth_system/serial/tests/CMakeFiles/run_tests_serial_gtest.dir/build: run_tes
 .PHONY : f1tenth_system/serial/tests/CMakeFiles/run_tests_serial_gtest.dir/build
 
 f1tenth_system/serial/tests/CMakeFiles/run_tests_serial_gtest.dir/clean:
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/serial/tests && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_serial_gtest.dir/cmake_clean.cmake
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/serial/tests && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_serial_gtest.dir/cmake_clean.cmake
 .PHONY : f1tenth_system/serial/tests/CMakeFiles/run_tests_serial_gtest.dir/clean
 
 f1tenth_system/serial/tests/CMakeFiles/run_tests_serial_gtest.dir/depend:
-	cd /home/nx/f1tenth_ros1_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nx/f1tenth_ros1_ws/src /home/nx/f1tenth_ros1_ws/src/f1tenth_system/serial/tests /home/nx/f1tenth_ros1_ws/build /home/nx/f1tenth_ros1_ws/build/f1tenth_system/serial/tests /home/nx/f1tenth_ros1_ws/build/f1tenth_system/serial/tests/CMakeFiles/run_tests_serial_gtest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/serial/tests /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/serial/tests /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/serial/tests/CMakeFiles/run_tests_serial_gtest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : f1tenth_system/serial/tests/CMakeFiles/run_tests_serial_gtest.dir/depend
 

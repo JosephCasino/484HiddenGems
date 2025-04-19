@@ -29,7 +29,7 @@ def main():
 
     data_path = Float64MultiArray()
     data_path.data = [0, ] * 4
-
+    print("started")
     while not rospy.is_shutdown():
 
         msg = master.recv_match(blocking=False)

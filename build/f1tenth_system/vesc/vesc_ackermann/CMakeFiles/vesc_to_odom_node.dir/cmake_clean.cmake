@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/nx/f1tenth_ros1_ws/devel/lib/vesc_ackermann/vesc_to_odom_node"
-  "/home/nx/f1tenth_ros1_ws/devel/lib/vesc_ackermann/vesc_to_odom_node.pdb"
+  "/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/vesc_ackermann/vesc_to_odom_node"
+  "/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/vesc_ackermann/vesc_to_odom_node.pdb"
   "CMakeFiles/vesc_to_odom_node.dir/src/vesc_to_odom.cpp.o"
   "CMakeFiles/vesc_to_odom_node.dir/src/vesc_to_odom_node.cpp.o"
 )

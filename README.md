@@ -12,7 +12,6 @@ This vicon tracker code follows what is described in the MP2 documentation where
 ### *Tuning*
 The steering angle can be tuned with the variable 
 python
-k
 
 and the lookahead distance can be tuned with
 python

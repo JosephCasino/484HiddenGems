@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/nx/f1tenth_ros1_ws/devel/lib/vesc_driver/vesc_driver_node"
-  "/home/nx/f1tenth_ros1_ws/devel/lib/vesc_driver/vesc_driver_node.pdb"
+  "/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/vesc_driver/vesc_driver_node"
+  "/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/vesc_driver/vesc_driver_node.pdb"
   "CMakeFiles/vesc_driver_node.dir/src/vesc_driver.cpp.o"
   "CMakeFiles/vesc_driver_node.dir/src/vesc_driver_node.cpp.o"
   "CMakeFiles/vesc_driver_node.dir/src/vesc_interface.cpp.o"

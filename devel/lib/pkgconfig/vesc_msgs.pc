@@ -1,8 +1,8 @@
-prefix=/home/nx/f1tenth_ros1_ws/devel
+prefix=/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel
 
 Name: vesc_msgs
 Description: Description of vesc_msgs
 Version: 0.0.1
-Cflags: -I/home/nx/f1tenth_ros1_ws/devel/include
+Cflags: -I/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/include
 Libs: -L${prefix}/lib 
 Requires: std_msgs message_runtime

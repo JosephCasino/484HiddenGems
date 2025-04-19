@@ -1,0 +1,8 @@
+prefix=/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/install
+
+Name: hector_compressed_map_transport
+Description: Description of hector_compressed_map_transport
+Version: 0.5.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs nav_msgs sensor_msgs

@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "waypoint_logger"
-PROJECT_SPACE_DIR = "/home/nx/f1tenth_ros1_ws/devel"
+PROJECT_SPACE_DIR = "/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel"
 PROJECT_VERSION = "0.0.0"

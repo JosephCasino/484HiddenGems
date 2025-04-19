@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/nx/f1tenth_ros1_ws/devel/share/common-lisp/ros/ackermann_msgs/msg/AckermannDrive.lisp"
-  "/home/nx/f1tenth_ros1_ws/devel/share/common-lisp/ros/ackermann_msgs/msg/AckermannDriveStamped.lisp"
+  "/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/share/common-lisp/ros/ackermann_msgs/msg/AckermannDrive.lisp"
+  "/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/share/common-lisp/ros/ackermann_msgs/msg/AckermannDriveStamped.lisp"
   "CMakeFiles/ackermann_msgs_generate_messages_lisp"
 )
 

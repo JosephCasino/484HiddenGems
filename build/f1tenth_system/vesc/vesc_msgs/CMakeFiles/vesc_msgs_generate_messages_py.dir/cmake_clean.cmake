@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/nx/f1tenth_ros1_ws/devel/lib/python3/dist-packages/vesc_msgs/msg/_VescState.py"
-  "/home/nx/f1tenth_ros1_ws/devel/lib/python3/dist-packages/vesc_msgs/msg/_VescStateStamped.py"
-  "/home/nx/f1tenth_ros1_ws/devel/lib/python3/dist-packages/vesc_msgs/msg/__init__.py"
+  "/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/python3/dist-packages/vesc_msgs/msg/_VescState.py"
+  "/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/python3/dist-packages/vesc_msgs/msg/_VescStateStamped.py"
+  "/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/python3/dist-packages/vesc_msgs/msg/__init__.py"
   "CMakeFiles/vesc_msgs_generate_messages_py"
 )
 

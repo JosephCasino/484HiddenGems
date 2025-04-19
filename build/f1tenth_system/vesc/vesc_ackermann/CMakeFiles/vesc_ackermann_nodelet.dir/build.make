@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nx/f1tenth_ros1_ws/src
+CMAKE_SOURCE_DIR = /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nx/f1tenth_ros1_ws/build
+CMAKE_BINARY_DIR = /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build
 
 # Include any dependencies generated for this target.
 include f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/depend.make
@@ -58,56 +58,56 @@ include f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir
 include f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/flags.make
 
 f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.o: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/flags.make
-f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.o: /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc_nodelet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nx/f1tenth_ros1_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.o"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.o -c /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc_nodelet.cpp
+f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.o: /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc_nodelet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.o"
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.o -c /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc_nodelet.cpp
 
 f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.i"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc_nodelet.cpp > CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.i
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc_nodelet.cpp > CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.i
 
 f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.s"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc_nodelet.cpp -o CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.s
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc_nodelet.cpp -o CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.s
 
 f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.o: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/flags.make
-f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.o: /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nx/f1tenth_ros1_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.o"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.o -c /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp
+f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.o: /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.o"
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.o -c /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp
 
 f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.i"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp > CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.i
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp > CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.i
 
 f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.s"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp -o CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.s
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp -o CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.s
 
 f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.o: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/flags.make
-f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.o: /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom_nodelet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nx/f1tenth_ros1_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.o"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.o -c /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom_nodelet.cpp
+f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.o: /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom_nodelet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.o"
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.o -c /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom_nodelet.cpp
 
 f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.i"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom_nodelet.cpp > CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.i
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom_nodelet.cpp > CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.i
 
 f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.s"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom_nodelet.cpp -o CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.s
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom_nodelet.cpp -o CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.s
 
 f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.o: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/flags.make
-f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.o: /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nx/f1tenth_ros1_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.o"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.o -c /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp
+f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.o: /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.o"
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.o -c /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp
 
 f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.i"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp > CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.i
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp > CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.i
 
 f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.s"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp -o CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.s
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp -o CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.s
 
 # Object files for target vesc_ackermann_nodelet
 vesc_ackermann_nodelet_OBJECTS = \
@@ -119,58 +119,58 @@ vesc_ackermann_nodelet_OBJECTS = \
 # External object files for target vesc_ackermann_nodelet
 vesc_ackermann_nodelet_EXTERNAL_OBJECTS =
 
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.o
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.o
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.o
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.o
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/build.make
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libnodeletlib.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libbondcpp.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libuuid.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libclass_loader.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libPocoFoundation.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libdl.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libroslib.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/librospack.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libpython3.8.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libboost_program_options.so.1.71.0
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libtinyxml2.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libtf.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libtf2_ros.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libactionlib.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libmessage_filters.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libroscpp.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libpthread.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.71.0
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libtf2.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/librosconsole.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/librostime.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libcpp_common.so
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
-/home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nx/f1tenth_ros1_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library /home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so"
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vesc_ackermann_nodelet.dir/link.txt --verbose=$(VERBOSE)
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc_nodelet.cpp.o
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/ackermann_to_vesc.cpp.o
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom_nodelet.cpp.o
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/src/vesc_to_odom.cpp.o
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/build.make
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libnodeletlib.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libbondcpp.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libuuid.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libclass_loader.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libPocoFoundation.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libdl.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libroslib.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/librospack.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libboost_program_options.so.1.71.0
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libtinyxml2.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libtf.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libtf2_ros.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libactionlib.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libmessage_filters.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libroscpp.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libpthread.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.71.0
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libtf2.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/librosconsole.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/librostime.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /opt/ros/noetic/lib/libcpp_common.so
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
+/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so: f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so"
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vesc_ackermann_nodelet.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/build: /home/nx/f1tenth_ros1_ws/devel/lib/libvesc_ackermann_nodelet.so
+f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/build: /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/lib/libvesc_ackermann_nodelet.so
 
 .PHONY : f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/build
 
 f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/clean:
-	cd /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann && $(CMAKE_COMMAND) -P CMakeFiles/vesc_ackermann_nodelet.dir/cmake_clean.cmake
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann && $(CMAKE_COMMAND) -P CMakeFiles/vesc_ackermann_nodelet.dir/cmake_clean.cmake
 .PHONY : f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/clean
 
 f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/depend:
-	cd /home/nx/f1tenth_ros1_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nx/f1tenth_ros1_ws/src /home/nx/f1tenth_ros1_ws/src/f1tenth_system/vesc/vesc_ackermann /home/nx/f1tenth_ros1_ws/build /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann /home/nx/f1tenth_ros1_ws/build/f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/src/f1tenth_system/vesc/vesc_ackermann /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann /home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/build/f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : f1tenth_system/vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/depend
 

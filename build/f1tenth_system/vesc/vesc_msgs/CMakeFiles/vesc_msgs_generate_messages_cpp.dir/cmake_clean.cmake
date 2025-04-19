@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/nx/f1tenth_ros1_ws/devel/include/vesc_msgs/VescState.h"
-  "/home/nx/f1tenth_ros1_ws/devel/include/vesc_msgs/VescStateStamped.h"
+  "/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/include/vesc_msgs/VescState.h"
+  "/home/nx/f1tenth_ros1_hiddengems/f1-tenth-workspace-and-starter-code/devel/include/vesc_msgs/VescStateStamped.h"
   "CMakeFiles/vesc_msgs_generate_messages_cpp"
 )
 
