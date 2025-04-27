@@ -1,4 +1,4 @@
-prefix=/home/taoweih2/Documents/ece484/f1tenth_simulator/install
+prefix=/home/taoweihuang/Documents/ece484/484HiddenGems/install
 
 Name: racecar_worlds
 Description: Description of racecar_worlds

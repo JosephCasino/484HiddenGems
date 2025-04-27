@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "gazebo_ros;geometry_msgs;nav_msgs;rospy;sensor_msgs;std_msgs;tf;message_runtime".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "f1tenth-sim"
-PROJECT_SPACE_DIR = "/home/taoweih2/Documents/ece484/f1tenth_simulator/install"
+PROJECT_SPACE_DIR = "/home/taoweihuang/Documents/ece484/484HiddenGems/install"
 PROJECT_VERSION = "0.2.0"

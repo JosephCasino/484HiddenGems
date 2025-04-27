@@ -1,8 +1,8 @@
-# Install script for directory: /home/taoweih2/Documents/ece484/f1tenth_simulator/src/racecar_worlds
+# Install script for directory: /home/taoweihuang/Documents/ece484/484HiddenGems/src/racecar_worlds
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/taoweih2/Documents/ece484/f1tenth_simulator/install")
+  set(CMAKE_INSTALL_PREFIX "/home/taoweihuang/Documents/ece484/484HiddenGems/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,23 +37,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/taoweihuang/Documents/ece484/484HiddenGems/build/racecar_worlds/catkin_generated/installspace/racecar_worlds.pc")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/taoweih2/Documents/ece484/f1tenth_simulator/build/racecar_worlds/catkin_generated/installspace/racecar_worlds.pc")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/racecar_worlds/cmake" TYPE FILE FILES
-    "/home/taoweih2/Documents/ece484/f1tenth_simulator/build/racecar_worlds/catkin_generated/installspace/racecar_worldsConfig.cmake"
-    "/home/taoweih2/Documents/ece484/f1tenth_simulator/build/racecar_worlds/catkin_generated/installspace/racecar_worldsConfig-version.cmake"
+    "/home/taoweihuang/Documents/ece484/484HiddenGems/build/racecar_worlds/catkin_generated/installspace/racecar_worldsConfig.cmake"
+    "/home/taoweihuang/Documents/ece484/484HiddenGems/build/racecar_worlds/catkin_generated/installspace/racecar_worldsConfig-version.cmake"
     )
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/racecar_worlds" TYPE FILE FILES "/home/taoweih2/Documents/ece484/f1tenth_simulator/src/racecar_worlds/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/racecar_worlds" TYPE FILE FILES "/home/taoweihuang/Documents/ece484/484HiddenGems/src/racecar_worlds/package.xml")
 endif()
 

@@ -1,4 +1,4 @@
-prefix=/home/taoweih2/Documents/ece484/f1tenth_simulator/install
+prefix=/home/taoweihuang/Documents/ece484/484HiddenGems/install
 
 Name: f1tenth-sim
 Description: Description of f1tenth-sim

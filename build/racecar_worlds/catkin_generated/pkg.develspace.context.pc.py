@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "racecar_worlds"
-PROJECT_SPACE_DIR = "/home/taoweih2/Documents/ece484/f1tenth_simulator/devel"
+PROJECT_SPACE_DIR = "/home/taoweihuang/Documents/ece484/484HiddenGems/devel"
 PROJECT_VERSION = "0.0.0"

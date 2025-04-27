@@ -1,8 +1,8 @@
-# Install script for directory: /home/taoweih2/Documents/ece484/f1tenth_simulator/src
+# Install script for directory: /home/taoweihuang/Documents/ece484/484HiddenGems/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/taoweih2/Documents/ece484/f1tenth_simulator/install")
+  set(CMAKE_INSTALL_PREFIX "/home/taoweihuang/Documents/ece484/484HiddenGems/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,12 +37,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
         file(MAKE_DIRECTORY "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -52,92 +47,109 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
       endif()
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/taoweih2/Documents/ece484/f1tenth_simulator/install/_setup_util.py")
+   "/home/taoweihuang/Documents/ece484/484HiddenGems/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/taoweih2/Documents/ece484/f1tenth_simulator/install" TYPE PROGRAM FILES "/home/taoweih2/Documents/ece484/f1tenth_simulator/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/taoweihuang/Documents/ece484/484HiddenGems/install" TYPE PROGRAM FILES "/home/taoweihuang/Documents/ece484/484HiddenGems/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/taoweih2/Documents/ece484/f1tenth_simulator/install/env.sh")
+   "/home/taoweihuang/Documents/ece484/484HiddenGems/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/taoweih2/Documents/ece484/f1tenth_simulator/install" TYPE PROGRAM FILES "/home/taoweih2/Documents/ece484/f1tenth_simulator/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/taoweihuang/Documents/ece484/484HiddenGems/install" TYPE PROGRAM FILES "/home/taoweihuang/Documents/ece484/484HiddenGems/build/catkin_generated/installspace/env.sh")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/taoweih2/Documents/ece484/f1tenth_simulator/install/setup.bash;/home/taoweih2/Documents/ece484/f1tenth_simulator/install/local_setup.bash")
+   "/home/taoweihuang/Documents/ece484/484HiddenGems/install/setup.bash;/home/taoweihuang/Documents/ece484/484HiddenGems/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/taoweih2/Documents/ece484/f1tenth_simulator/install" TYPE FILE FILES
-    "/home/taoweih2/Documents/ece484/f1tenth_simulator/build/catkin_generated/installspace/setup.bash"
-    "/home/taoweih2/Documents/ece484/f1tenth_simulator/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/taoweihuang/Documents/ece484/484HiddenGems/install" TYPE FILE FILES
+    "/home/taoweihuang/Documents/ece484/484HiddenGems/build/catkin_generated/installspace/setup.bash"
+    "/home/taoweihuang/Documents/ece484/484HiddenGems/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/taoweih2/Documents/ece484/f1tenth_simulator/install/setup.sh;/home/taoweih2/Documents/ece484/f1tenth_simulator/install/local_setup.sh")
+   "/home/taoweihuang/Documents/ece484/484HiddenGems/install/setup.sh;/home/taoweihuang/Documents/ece484/484HiddenGems/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/taoweih2/Documents/ece484/f1tenth_simulator/install" TYPE FILE FILES
-    "/home/taoweih2/Documents/ece484/f1tenth_simulator/build/catkin_generated/installspace/setup.sh"
-    "/home/taoweih2/Documents/ece484/f1tenth_simulator/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/taoweihuang/Documents/ece484/484HiddenGems/install" TYPE FILE FILES
+    "/home/taoweihuang/Documents/ece484/484HiddenGems/build/catkin_generated/installspace/setup.sh"
+    "/home/taoweihuang/Documents/ece484/484HiddenGems/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/taoweih2/Documents/ece484/f1tenth_simulator/install/setup.zsh;/home/taoweih2/Documents/ece484/f1tenth_simulator/install/local_setup.zsh")
+   "/home/taoweihuang/Documents/ece484/484HiddenGems/install/setup.zsh;/home/taoweihuang/Documents/ece484/484HiddenGems/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/taoweih2/Documents/ece484/f1tenth_simulator/install" TYPE FILE FILES
-    "/home/taoweih2/Documents/ece484/f1tenth_simulator/build/catkin_generated/installspace/setup.zsh"
-    "/home/taoweih2/Documents/ece484/f1tenth_simulator/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/taoweihuang/Documents/ece484/484HiddenGems/install" TYPE FILE FILES
+    "/home/taoweihuang/Documents/ece484/484HiddenGems/build/catkin_generated/installspace/setup.zsh"
+    "/home/taoweihuang/Documents/ece484/484HiddenGems/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/taoweih2/Documents/ece484/f1tenth_simulator/install/.rosinstall")
+   "/home/taoweihuang/Documents/ece484/484HiddenGems/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/taoweih2/Documents/ece484/f1tenth_simulator/install" TYPE FILE FILES "/home/taoweih2/Documents/ece484/f1tenth_simulator/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/taoweihuang/Documents/ece484/484HiddenGems/install" TYPE FILE FILES "/home/taoweihuang/Documents/ece484/484HiddenGems/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/taoweih2/Documents/ece484/f1tenth_simulator/build/gtest/cmake_install.cmake")
-  include("/home/taoweih2/Documents/ece484/f1tenth_simulator/build/racecar_worlds/cmake_install.cmake")
-  include("/home/taoweih2/Documents/ece484/f1tenth_simulator/build/f1tenth-sim/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/gtest/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/hector_slam/hector_geotiff_launch/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/hector_slam/hector_slam/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/hector_slam/hector_slam_launch/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/racecar_worlds/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/hector_slam/hector_map_tools/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/hector_slam/hector_nav_msgs/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/slam_toolbox/slam_toolbox_msgs/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/hector_slam/hector_geotiff/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/hector_slam/hector_geotiff_plugins/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/hector_slam/hector_marker_drawing/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/hector_slam/hector_compressed_map_transport/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/f1tenth-sim/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/hector_slam/hector_imu_attitude_to_tf/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/hector_slam/hector_imu_tools/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/hector_slam/hector_map_server/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/hector_slam/hector_trajectory_server/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/hector_slam/hector_mapping/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/slam_toolbox/slam_toolbox/cmake_install.cmake")
+  include("/home/taoweihuang/Documents/ece484/484HiddenGems/build/slam_toolbox/slam_toolbox_rviz/cmake_install.cmake")
 
 endif()
 
@@ -149,5 +161,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/taoweih2/Documents/ece484/f1tenth_simulator/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/taoweihuang/Documents/ece484/484HiddenGems/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

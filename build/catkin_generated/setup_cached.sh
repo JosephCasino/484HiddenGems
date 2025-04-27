@@ -7,6 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/opt/ros/noetic/lib'
-export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig'
-export PWD='/home/taoweih2/Documents/ece484/f1tenth_simulator/build'
+export PWD='/home/taoweihuang/Documents/ece484/484HiddenGems/build'

@@ -67,14 +67,14 @@ set(f1tenth-sim_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(f1tenth-sim_SOURCE_PREFIX /home/taoweih2/Documents/ece484/f1tenth_simulator/src/f1tenth-sim)
-  set(f1tenth-sim_DEVEL_PREFIX /home/taoweih2/Documents/ece484/f1tenth_simulator/devel)
+  set(f1tenth-sim_SOURCE_PREFIX /home/taoweihuang/Documents/ece484/484HiddenGems/src/f1tenth-sim)
+  set(f1tenth-sim_DEVEL_PREFIX /home/taoweihuang/Documents/ece484/484HiddenGems/devel)
   set(f1tenth-sim_INSTALL_PREFIX "")
   set(f1tenth-sim_PREFIX ${f1tenth-sim_DEVEL_PREFIX})
 else()
   set(f1tenth-sim_SOURCE_PREFIX "")
   set(f1tenth-sim_DEVEL_PREFIX "")
-  set(f1tenth-sim_INSTALL_PREFIX /home/taoweih2/Documents/ece484/f1tenth_simulator/install)
+  set(f1tenth-sim_INSTALL_PREFIX /home/taoweihuang/Documents/ece484/484HiddenGems/install)
   set(f1tenth-sim_PREFIX ${f1tenth-sim_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/taoweih2/Documents/ece484/f1tenth_simulator/install/lib;/home/taoweih2/Documents/ece484/f1tenth_simulator/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/taoweihuang/Documents/ece484/484HiddenGems/install/lib;/home/taoweihuang/Documents/ece484/484HiddenGems/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
