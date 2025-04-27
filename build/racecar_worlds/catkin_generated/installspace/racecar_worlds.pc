@@ -1,8 +1,0 @@
-prefix=/home/taoweihuang/Documents/ece484/484HiddenGems/install
-
-Name: racecar_worlds
-Description: Description of racecar_worlds
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
