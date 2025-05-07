@@ -1,2 +1,0 @@
-f1tenth-sim:racecar_worlds
--DCATKIN_DEVEL_PREFIX=/mnt/c/Users/josep/484HiddenGems/devel -DCMAKE_INSTALL_PREFIX=/mnt/c/Users/josep/484HiddenGems/install -G Unix Makefiles
