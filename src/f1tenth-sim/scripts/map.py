@@ -67,7 +67,6 @@ def bfs_search_far_from_walls(grid, start, distance_map):
     visited.add(start)
 
     while queue:
-        # prioritize farther from wall
         queue = deque(sorted(queue, key=lambda x: -distance_map[x[0][0], x[0][1]]))
         (i, j), path = queue.popleft()
 
@@ -121,10 +120,7 @@ def map_callback(msg):
         print("Start position is occupied.")
         return
 
-    # Compute distance from walls
     distance_map = compute_distance_from_walls(grid)
-
-    # Run BFS preferring farther-from-wall cells
     path = bfs_search_far_from_walls(grid, (start_i, start_j), distance_map)
 
     if path:
@@ -150,11 +146,17 @@ def map_callback(msg):
         path_pub.publish(path_msg)
     else:
         print("No reachable unknown nodes found.")
+        path_msg = Path()
+        path_msg.header.frame_id = "map"
+        path_msg.header.stamp = rospy.Time.now()
+        path_msg.poses = []
+        path_pub.publish(path_msg)
 
     if grid[start_i, start_j] != 1:
         grid[start_i, start_j] = 3
 
     colors = ['gray', 'white', 'black', 'red', 'green']
+
     cmap = ListedColormap(colors)
     bounds = [-2, -0.5, 0.5, 1.5, 2.5, 3.5]
     norm = BoundaryNorm(bounds, cmap.N)

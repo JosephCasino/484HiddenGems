@@ -9,6 +9,7 @@ import tty
 from ackermann_msgs.msg import AckermannDrive
 
 from sensor_msgs.msg import LaserScan
+from nav_msgs.msg import Path
 
 
 keyBindings = {'w':(1.0,  0.0), # move forward
@@ -20,6 +21,8 @@ keyBindings = {'w':(1.0,  0.0), # move forward
 speed_limit = 0.250
 angle_limit = 0.325
 
+done_mapping = False
+
 def getKey():
    tty.setraw(sys.stdin.fileno())
    select.select([sys.stdin], [], [], 0)
@@ -30,7 +33,11 @@ def getKey():
 def vels(speed, turn):
   return 'currently:\tspeed {}\tturn {}'.format(speed, turn)
 
+def map_callback(msg):
+  global done_mapping
 
+  if len(msg.poses) == 0:
+    done_mapping = True
 
 
 # UNCOMMENT TO PRINT LIDAR DATA WHEN CAR COMES TO A STOP
@@ -67,7 +74,7 @@ if __name__== '__main__':
   rospy.init_node('keyboard_teleop', anonymous = True)
 
   #subscribe to Lidar data
-  #rospy.Subscriber('/car_1/scan', LaserScan, lidar_callback)
+  rospy.Subscriber('/planned_path', Path, map_callback)
 
 
   speed  = 0.0
@@ -76,6 +83,12 @@ if __name__== '__main__':
 
   try:
     while True:
+       if (done_mapping == True):
+        print("finished mapping")
+        speed = 0
+        angle = 0
+        break
+
        key = getKey()
        if key in keyBindings.keys():
           speed = keyBindings[key][0]

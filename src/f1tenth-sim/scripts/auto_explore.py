@@ -11,7 +11,7 @@ import threading
 # Configurable parameters
 LOOKAHEAD_DISTANCE = 1
 MAX_LINEAR_SPEED = 0.1
-MAX_ANGULAR_SPEED = 0.3
+MAX_ANGULAR_SPEED = 0.6
 WHEELBASE = 0.5
 
 # Globals
