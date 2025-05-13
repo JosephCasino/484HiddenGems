@@ -16,6 +16,7 @@ def odom_callback(msg):
     pose = msg.pose.pose.position
     current_position = (pose.x, pose.y)
 
+# Convert the grid to a lower resolution to improve computing time
 def process_grid(grid, factor):
     h, w = grid.shape
     new_h = h // factor
@@ -34,6 +35,7 @@ def process_grid(grid, factor):
 
     return downsampled
 
+# Getting neighbors of a node using the matrix as a graph
 def neighbors(grid, i, j):
     H, W = grid.shape
     for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
@@ -41,7 +43,8 @@ def neighbors(grid, i, j):
         if 0 <= ni < H and 0 <= nj < W:
             yield ni, nj
 
-def compute_distance_from_walls(grid):
+#distance hueristic functions
+def distance_func(grid):
     H, W = grid.shape
     distance = np.full((H, W), np.inf)
     queue = deque()
@@ -61,7 +64,7 @@ def compute_distance_from_walls(grid):
 
     return distance
 
-def bfs_search_far_from_walls(grid, start, distance_map):
+def bfs_search(grid, start, distance_map):
     visited = set()
     queue = deque([(start, [start])])
     visited.add(start)
@@ -120,11 +123,11 @@ def map_callback(msg):
         print("Start position is occupied.")
         return
 
-    distance_map = compute_distance_from_walls(grid)
-    path = bfs_search_far_from_walls(grid, (start_i, start_j), distance_map)
+    distance_map = distance_func(grid)
+    path = bfs_search(grid, (start_i, start_j), distance_map)
 
     if path:
-        print(f"Found wall-avoiding path of length {len(path)}")
+        print(f"Found path of length {len(path)}")
 
         path_msg = Path()
         path_msg.header.stamp = rospy.Time.now()
@@ -156,7 +159,6 @@ def map_callback(msg):
         grid[start_i, start_j] = 3
 
     colors = ['gray', 'white', 'black', 'red', 'green']
-
     cmap = ListedColormap(colors)
     bounds = [-2, -0.5, 0.5, 1.5, 2.5, 3.5]
     norm = BoundaryNorm(bounds, cmap.N)

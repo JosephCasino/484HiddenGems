@@ -13,8 +13,8 @@ from nav_msgs.msg import Path
 
 
 keyBindings = {'w':(1.0,  0.0), # move forward
-               'd':(1.0, -1.0), # move foward and right
-               'a':(1.0 , 1.0), # move forward and left
+               'd':(1.0, -3.0), # move foward and right
+               'a':(1.0 , 3.0), # move forward and left
                's':(-1.0, 0.0), # move reverse
                'q':(0.0,  0.0)} # all stop
 
@@ -107,7 +107,7 @@ if __name__== '__main__':
     print('raise exception: key binding error')
 
   finally:
-    command = AckermannDrive();
+    command = AckermannDrive()
     command.speed = speed * speed_limit
     command.steering_angle = angle * angle_limit
     command_pub.publish(command)

@@ -8,20 +8,17 @@ from geometry_msgs.msg import PoseStamped
 from pynput import keyboard
 import threading
 
-# Configurable parameters
 LOOKAHEAD_DISTANCE = 1
 MAX_LINEAR_SPEED = 0.1
 MAX_ANGULAR_SPEED = 0.6
 WHEELBASE = 0.5
 
-# Globals
 waypoints = []
 current_pose = None
 manual_mode = False
 manual_speed = 0.0
 manual_angle = 0.0
 
-# Key mappings
 key_bindings = {
     'w': (1.0, 0.0),
     'a': (1.0, 1.0),
@@ -64,11 +61,9 @@ def pure_pursuit_control():
     dx = target[0] - x
     dy = target[1] - y
 
-    # Transform to local frame
     local_x = cos(-yaw) * dx - sin(-yaw) * dy
     local_y = sin(-yaw) * dx + cos(-yaw) * dy
 
-    # Clamp to avoid division by zero
     clamped_x = max(local_x, 0.1)
 
     steering_angle = atan2(2 * WHEELBASE * local_y, LOOKAHEAD_DISTANCE**2)
@@ -104,7 +99,6 @@ if __name__ == '__main__':
     rospy.Subscriber('/planned_path', Path, path_callback)
     command_pub = rospy.Publisher('/car_1/multiplexer/command', AckermannDrive, queue_size=1)
 
-    # Launch keyboard listener in background
     threading.Thread(target=keyboard_listener, daemon=True).start()
 
     rate = rospy.Rate(10)
